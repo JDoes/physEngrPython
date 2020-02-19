@@ -1,11 +1,3 @@
-#Gordon Bates
-#Started on 02/12/2020
-
-#This program is for a frictionless car on an inclined ramp,
-#with a cable, over a frictionless pulley which holds a hanging
-#mass, and the hanging mass is holding the car in position
-#on the ramp.
-
 import math
 
 solve = input("Which variable do you want to solve for: m_car, m_hang, or angle? ")
@@ -15,7 +7,7 @@ if solve.lower() == "m_hang":
     theta = float(input("Enter the ramp angle, in degrees: "))
     m_car = float(input("Enter the mass of the car, in grams: "))
 
-    m_hang = m_car*math.sin(math.radians(theta))
+    m_hang = round((m_car*math.sin(math.radians(theta))),3)
 
     print("On a " + str(theta) + " degree incline, a")
     print(str(m_car) + " gram car requires " + str(m_hang) + " grams" )
@@ -26,7 +18,7 @@ elif solve.lower() == "m_car":
     theta = float(input("Enter the angle, in degrees: "))
     m_hang = float(input("Enter the mass of the hanger, in grams: "))
 
-    m_car = m_hang/math.sin(math.radians(theta))
+    m_car = round((m_hang/math.sin(math.radians(theta))),3)
 
     print("On a " + str(theta) + " degree ramp, with a ")
     print(str(m_hang) + "gram hanger, the mass of car that")  
@@ -37,7 +29,7 @@ elif solve.lower() == "angle":
     m_car = float(input("Enter the mass of the car, in grams: "))
     m_hang = float(input("Enter the mass of the hanger, in grams: "))
 
-    theta = math.degrees(math.asin(m_hang/m_car))
+    theta = round((math.degrees(math.asin(m_hang/m_car))),3)
 
     print("For a car with a mass of " + str(m_car) + " grams,")
     print("being held by a " + str(m_hang) + " gram hanging mass,")
