@@ -2,6 +2,8 @@
 #Started on 02/11/2020
 #This program will calculate various values of a crane.
 #Round to three decimal places.
+#This program assumes the boom is attached to the tower with a hinge, and the
+#mast is a solid part of the tower.
 
 import math
 
