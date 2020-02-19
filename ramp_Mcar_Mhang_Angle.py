@@ -1,3 +1,9 @@
+#Gordon Bates
+#Started on 02/12/2020
+#This program assumes no friction anywhere, a cable that is parallel to the ramp.
+#This program will calculate any of various quantities for a car on an inclined ramp,
+#held in place by a hanging mass over a pulley.
+
 import math
 
 solve = input("Which variable do you want to solve for: m_car, m_hang, or angle? ")
