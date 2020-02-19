@@ -11,7 +11,7 @@ import math
 solve = input("Which variable do you want to solve for: m_car, m_hang, or angle? ")
 
 #Given an angle and a car's mass, calculate hanging mass
-if solve.lower() == "m_car":
+if solve.lower() == "m_hang":
     theta = float(input("Enter the ramp angle, in degrees: "))
     m_car = float(input("Enter the mass of the car, in grams: "))
 
@@ -22,7 +22,7 @@ if solve.lower() == "m_car":
     print("of hanging mass to hold it in place.") 
 
 #Given an angle and hanging mass, calculate car mass
-elif solve.lower() == "m_hang":
+elif solve.lower() == "m_car":
     theta = float(input("Enter the angle, in degrees: "))
     m_hang = float(input("Enter the mass of the hanger, in grams: "))
 
