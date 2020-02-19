@@ -1,6 +1,7 @@
 #Gordon Bates
 #Started on 02/11/2020
 #This program will calculate various values of a crane.
+#Round to three decimal places.
 
 import math
 
