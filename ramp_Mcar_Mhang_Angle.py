@@ -27,7 +27,7 @@ elif solve.lower() == "m_car":
     m_car = round((m_hang/math.sin(math.radians(theta))),3)
 
     print("On a " + str(theta) + " degree ramp, with a ")
-    print(str(m_hang) + "gram hanger, the mass of car that")  
+    print(str(m_hang) + " gram hanger, the mass of car that")  
     print("it can hold still is " + str(m_car) + " grams.")
 
 #Given hanging mass and car mass, calculate the angle
