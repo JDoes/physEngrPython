@@ -9,11 +9,11 @@ print("direction, from whatever is being called zero.\n\n")
 a = float(input("Enter the acceleration, in meters/second^2: "))
 v = float(input("Enter the initial velocity, in meters/second: "))
 x = float(input("Enter the initial position, in meters: "))
-t = float(input("Enter the time in seconds, and I'll tell you what the position will be in meters: "))
+t = float(input("Enter the time in seconds: "))
 
-height = 0.5*a*t**2 + v*t + x
+position = 0.5*a*t**2 + v*t + x
 
 #print("The time of flight is " + str(fFt + fIn) + " feet, " + str(iLeft) + " inches. ")
-print("The position from start at") 
-print("t = " + str(t) + " seconds is x = " + str(height) + " meters. ")
+print("\nThe position at") 
+print("t = " + str(t) + " seconds is \nx = " + str(position) + " meters. ")
 
